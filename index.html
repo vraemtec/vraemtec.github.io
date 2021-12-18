@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/index.css">
+    <title>VraemTec</title>
+</head>
+
+<body>
+    <script src="./app/posision.js"></script>
+    <section class=" pantalla1 ">
+        <article>
+            <div class="jugador1"></div>
+            <div class="sombra1"></div>
+        </article>
+    </section>
+    <section class="control">
+        <div class="left-d" onmouseover="retroceder(true)" onmouseleave="retroceder(false)"></div>
+        <div class="right-d" onmouseover="avanzar(true)" onmouseleave="avanzar(false) "></div>
+        <div class="top-d" onmouseover="arriba(true)" onmouseleave="arriba(false)"></div>
+        <div class="bottom-d" onmouseover="abajo(true)" onmouseleave="abajo(false)"></div>
+        <!-- <div class="saltar" onmouseover="saltar(true)" onmouseleave="saltar(false)"></div> -->
+    </section>
+    <section>
+        <div class="bola1"></div>
+    </section>
+</body>
+
+</html>
