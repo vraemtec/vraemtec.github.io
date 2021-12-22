@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/index.css">
+    <title>VraemTec</title>
+</head>
+
+<body>
+    <script src="../app/posision.js"></script>
+
+    <div class="box caja-informacion">
+        <h1>Informacion</h1>
+        <p id="puntos" class="puntos">puntos: </p>
+        <p class="daño">daño: 0000</p>
+        <p class="ataque">ataque: Agresivo</p>
+        <p class="modalidad">modalidad: Duelo</p>
+        <p class="rama">rama: VraemTec</p>
+    </div>
+    <section class=" pantalla1 ">
+        <article>
+
+        </article>
+        <article>
+            <div class="jugador1"></div>
+            <div class="jugador2"></div>
+            <div class="sombra1"></div>
+        </article>
+    </section>
+    <div class="control">
+        <div class="left-d" onmouseover="retroceder(true)" onmouseleave="retroceder(false)">
+            <p class="tecla">a</p>
+        </div>
+        <div class="right-d" onmouseover="avanzar(true)" onmouseleave="avanzar(false) ">
+            <p class="tecla">d</p>
+        </div>
+        <div class="top-d" onmouseover="arriba(true)" onmouseleave="arriba(false)">
+            <p class="tecla">w</p>
+        </div>
+        <div class="bottom-d" onmouseover="abajo(true)" onmouseleave="abajo(false)">
+            <p class="tecla">s</p>
+        </div>
+        <!-- <div class="saltar" onmouseover="saltar(true)" onmouseleave="saltar(false)"></div> -->
+    </div>
+    <section>
+        <div class="bola1"></div>
+    </section>
+    <div class="pantalla-de-ganada">
+        <div class="pantalla-de-menu">
+            <h2>El ganador es</h2>
+            <p class="carita-f">😎😎</p>
+            <button><a href="../index.html">Volver al inicio</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -6,8 +6,12 @@ let at = 0;
 let yt = 0;
 let yb = 0
     // let paso = 0;
-const limpiar = (direccion) => {
-    clearInterval(direccion);
+window.onload = () => {
+    document.onkeydown = teclas;
+}
+const teclas = (e) => {
+    const tecla = String.fromCharCode(e.which);
+    if (tecla === "W") { arriba(true) } else if (tecla === "S") { abajo(true) } else if (tecla === "A") { retroceder(true) } else if (tecla === "D") { avanzar(true) }
 }
 const avanzar = (moverR) => {
     let ava = 0;
@@ -66,7 +70,7 @@ const abajo = (yabajo) => {
 const inicio = () => {
     let xi = "200";
     let yi = "300";
-
+    let puntos = 0;
 
     const collision = setInterval(() => {
 
@@ -79,6 +83,12 @@ const inicio = () => {
         // console.log("x1:", x1, "x2", x2, "y1", y1, "y2", y2)
         if (x1 && x2 && y1 && y2) {
             if (x1 === x2 && y1 === y2) {
+                const puntosClase = document.getElementById("puntos");
+                puntos = puntos + 1;
+                if (puntos === 3) {
+                    ganador();
+                }
+                puntosClase.innerHTML = "puntos: " + puntos;
                 // console.log("x1:", x1, "x2", x2, "y1", y1, "y2", y2)
                 xi = Math.floor(Math.random() * (700 - 0)) + 0;
                 yi = Math.floor(Math.random() * (300 - 0)) + 0;
@@ -100,5 +110,12 @@ const inicio = () => {
 
 
 
+}
+const ganador = () => {
+    const Ganador = document.querySelector(".pantalla-de-ganada");
+    Ganador.style.width = "100%";
+    Ganador.style.height = "100%";
+    Ganador.style.overflow = "visible";
+    console.log("ganador ya se sabe");
 }
 inicio()

@@ -1,0 +1,117 @@
+body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000138+9,000116+19,000216+52,000019+86,040042+100 */
+    background: rgb(0, 1, 56);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(0, 1, 56, 1) 9%, rgba(0, 1, 22, 1) 19%, rgba(0, 2, 22, 1) 52%, rgba(0, 0, 25, 1) 86%, rgba(4, 0, 66, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(0, 1, 56, 1) 9%, rgba(0, 1, 22, 1) 19%, rgba(0, 2, 22, 1) 52%, rgba(0, 0, 25, 1) 86%, rgba(4, 0, 66, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(0, 1, 56, 1) 9%, rgba(0, 1, 22, 1) 19%, rgba(0, 2, 22, 1) 52%, rgba(0, 0, 25, 1) 86%, rgba(4, 0, 66, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000138', endColorstr='#040042', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.fondo {
+    /* background-image: url("../img/fondo.jpg"); */
+    width: 100%;
+    height: 100%;
+    margin-top: -2.5rem;
+    margin-left: -0.5rem;
+    padding-top: 4rem;
+}
+
+h2 {
+    color: rgb(68, 71, 171);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.titulo {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    margin-bottom: 2rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    background-color: rgba(0, 0, 128, 0.311);
+    width: 25rem;
+    border-radius: 7px;
+    /* box-shadow: 1px 1px 7px white; */
+}
+
+@keyframes tituloAnimacion {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10%)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.fondo h1 {
+    animation-name: tituloAnimacion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    color: rgb(213, 30, 30);
+    font-family: Arial;
+    font-size: 3rem;
+    transition: 1s;
+    /* background-color: blue; */
+    /* padding: 1rem 1rem 1rem 1rem; */
+    text-shadow: 1px 1px 10px greenyellow;
+}
+
+.juego1,
+.juego2 {
+    display: inline-block;
+    /* border-radius: 1rem; */
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.juego1 {
+    border-color: #fff;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-width: 1px;
+    max-width: 24rem;
+    min-width: 20rem;
+    height: 15rem;
+    background-color: rgba(72, 71, 71, 0);
+}
+
+.juego2 {
+    border-color: #fff;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-width: 1px;
+    max-width: 24rem;
+    min-width: 20rem;
+    height: 15rem;
+    background-color: rgba(72, 71, 71, 0);
+}
+
+a {
+    color: rgb(140, 255, 0);
+    text-decoration: none;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+p {
+    color: magenta;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    border-style: none;
+    /* border-color: #fff; */
+    /* border-width: 1px; */
+    border-radius: 7px;
+    padding: .5rem 1rem .5rem;
+    background-color: rgba(0, 20, 121, 0);
+}
